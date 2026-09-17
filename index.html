@@ -361,7 +361,7 @@ footer {
     <h2>Aquarium<span class="pill">current open-source independent research, started May 2026</span></h2>
     <div class="body-copy">
       <p>An open experiment in artificial societies, in the spirit of Stanford's Smallville and Altera's Project Sid. The idea: build a population of autonomous agents, each with its own temperament, needs, and memory, connect them in a social network, and let group behaviour emerge from individual rules. Then use that population as an instrument.</p>
-      <p><strong>Why.</strong> A focus group is ten people in a room and a hope that they generalise. A survey measures individuals, but reactions aren't individual, they're contagious. A simulated society captures the part those tools miss, the network effects. Drop a message into the tank and watch how it spreads before it ever touches real people. Watch two schools drift into each other above and you will see it happen.</p>
+      <p><strong>Why.</strong> A focus group is ten people in a room and a hope that they generalise. A survey measures individuals, but reactions aren't individual, they're contagious. A simulated society captures the part those tools miss, the network effects. Drop a message into the tank and watch how it spreads before it ever touches real people. The school above is a sketch of that idea, not the system itself. The real build runs offline.</p>
       <h3>How it works, in three steps</h3>
       <ol class="steps">
         <li><strong>Seed.</strong> Build agent personas from behavioural data. Traits, preferences, and a place in a social graph that mirrors real network structure.</li>
@@ -370,10 +370,10 @@ footer {
       </ol>
       <h3>The ML layer</h3>
       <ul class="roadmap">
-        <li class="done"><strong>Now:</strong> rule-based agents with temperaments and memory, running live on this page, where the fish above form the network</li>
-        <li><strong>Next:</strong> LLM-driven personas with persistent memory and dialogue, so reactions carry reasoning</li>
-        <li><strong>Then:</strong> calibration against real engagement and survey data, so predictions can be checked, not admired</li>
-        <li><strong>Exploring:</strong> reinforcement learning for agent behaviour, and for tuning the population until simulated dynamics match observed ones</li>
+        <li class="done"><strong>Now:</strong> heterogeneous rule-based agents, each with sampled parameters for sociability, pace, and energy, driving local steering rules: separation, alignment, and cohesion within a fixed interaction radius, plus stochastic wander and depth-banded neighbourhoods. The social graph is a dynamic proximity network rebuilt every frame, and idea spread is a breadth-first contagion process over its current edges. The school on this page is a browser sketch of that architecture; the research build runs offline in Python</li>
+        <li><strong>Next:</strong> LLM-driven personas in the generative-agents mould: LoRA-tuned small language models, each conditioned on a persona profile, with episodic memory, retrieval, and reflection, and a structured action space so dialogue and decisions feed back into the network state rather than staying decorative</li>
+        <li><strong>Then:</strong> calibration as simulation-based inference: fit the simulator's summary statistics, spread curves, cascade sizes, degree and community distributions, to observed engagement and survey data, and validate on held-out events so predictions can be scored, not admired</li>
+        <li><strong>Exploring:</strong> reinforcement learning at two levels: PPO policy learning for individual agents against reward-shaped social objectives, and population-level tuning by evolutionary or Bayesian search, where the divergence between simulated and observed dynamics becomes the training signal for the simulator itself</li>
       </ul>
       <p>This is the research direction I'm taking to graduate study.</p>
     </div>
